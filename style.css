@@ -48,6 +48,9 @@ body {
   display: inline-block;
   margin-bottom: 8px;
 }
+.learning-tag:hover {
+  cursor: pointer;
+}
 
 .date {
   font-size: 12px;
