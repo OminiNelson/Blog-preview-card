@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f2cd4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 5px 5px 0 #000;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.learning-tag {
+  background-color: #f3c72b;
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 12px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #f3c72b;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ============ ADDING RESPONSIVENESS ============ */
+
+@media (max-width: 480px) {
+  .card-content {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .author-name {
+    font-size: 13px;
+  }
+
+  .author-img {
+    width: 28px;
+    height: 28px;
+  }
+}
